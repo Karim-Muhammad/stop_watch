@@ -1,0 +1,80 @@
+body {
+  font-family: "Fira Code", monospace;
+  background-image: url("1635653.webp");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  overflow: hidden; }
+
+body::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  height: 100%;
+  background-color: rgba(33, 43, 69, 0.4705882353); }
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+.quote {
+  padding: 20px 0;
+  width: 50%;
+  margin: auto; }
+  .quote p {
+    color: beige;
+    text-align: center; }
+
+.container {
+  margin: 0 auto;
+  height: 100%; }
+  @media (min-width: 720px) {
+    .container {
+      width: 97%; } }
+  @media (min-width: 1020px) {
+    .container {
+      width: 95%; } }
+  @media (min-width: 1800px) {
+    .container {
+      width: 92%; } }
+  .container .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100%;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; }
+    .container .wrapper .timer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px; }
+      .container .wrapper .timer p {
+        padding: 20px;
+        color: aliceblue;
+        border: 1px solid white;
+        font-weight: bold; }
+    .container .wrapper .control {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px; }
+      .container .wrapper .control button {
+        border: none;
+        padding: 10px 0;
+        flex: 1 calc(70% / 3);
+        background-color: rgba(100, 97, 80, 0.42);
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s; }
+        .container .wrapper .control button:hover {
+          background-color: #715e2b; }
+        .container .wrapper .control button.pressed {
+          pointer-events: none; }
+
+/*# sourceMappingURL=style.css.map */
